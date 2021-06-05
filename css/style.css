@@ -1,0 +1,151 @@
+body{
+  font: 300 16px/1.5 "Roboto",sans-serif;
+  color: #332E30;
+  background-color: #fff;
+}
+
+header{
+  display: block;
+}
+
+nav {
+  display: block;
+}
+.container{
+  position: relative;
+  height: 100%;
+}
+.page-content {
+  position: relative;
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.site-header {
+  border-bottom: 1px solid #e8e8e8; /*Borde del header*/
+  text-align: center; /*Deja los textos centrado*/
+  padding: 1rem 0;
+}
+
+.site-header nav a {
+  color:black;
+  text-decoration: underline;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 3px;
+  font-weight: 800;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: -1px;
+  text-decoration: none;
+  color: #424242;
+}
+.site-title:hover {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+
+#logo{
+  vertical-align: middle;
+}
+svg path, svg g{
+	transform-box: fill-box;
+}
+
+#Group_2 {
+  transform-origin:55% 50%;
+	-moz-transform-origin:55% 50%;
+	animation: flip_left 3.5s infinite linear alternate;
+}
+
+@keyframes flip_left {
+  0% {transform: perspective(2000px) rotateY(90deg) skewY(-1deg)}
+  30% {transform:perspective(2000px) rotateY(-25deg) skewY(-0.8deg)}
+  50% {transform:perspective(2000px) rotateY(20deg) skewY(0.8deg)}
+  70% {transform:perspective(2000px) rotateY(-10deg) skewY(-0.8deg)}
+  100% {transform:perspective(2000px) rotateY(0deg)}
+}
+
+#flamaIzquierda {
+  animation: scale-alternate 3s ease-out infinite alternate ;
+}
+
+#flamaDerecha {
+  animation: scale-alternate 2s ease-out infinite alternate;
+}
+
+@keyframes scale-alternate {
+  0% {
+    transform: rotate(0);
+  }
+  15% {
+    transform: rotate(5deg);
+  }
+  30% {
+    transform: rotate(-5deg);
+  }
+  45% {
+    transform: rotate(4deg);
+  }
+  60% {
+    transform: rotate(-4deg);
+  }
+  75% {
+    transform: rotate(2deg);
+  }
+  85% {
+    transform: rotate(-2deg);
+  }
+  92% {
+    transform: rotate(1deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+figure {
+  margin-left: auto;
+  margin-right: auto;
+  border:none;
+  width: 600px;
+ 
+}
+
+.texto{
+  text-align: justify;
+}
+
+@media (max-width: 650px){
+  #logo{
+    width: 60px;
+    height: 60px;
+  }
+  .site-title{
+    font-size: 0.8rem;
+    font-weight: 300;
+    font: bold;
+   text-decoration: none;
+   color: #424242;
+  }
+  .container{
+    width: 90%;
+  }
+  figure{
+    width: 100%;
+  }
+  .page-content{
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
