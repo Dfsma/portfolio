@@ -1,7 +1,7 @@
 body{
   font: 300 16px/1.5 "Roboto",sans-serif;
-  color: #332E30;
-  background-color: #fff;
+  color: #DEECFF;
+  background-color: #002e39;
 }
 
 header{
@@ -30,7 +30,7 @@ nav {
 }
 
 .site-header nav a {
-  color:black;
+  color:whitesmoke;
   text-decoration: underline;
   font-size: 12px;
   text-transform: uppercase;
@@ -43,7 +43,7 @@ nav {
   font-weight: 300;
   letter-spacing: -1px;
   text-decoration: none;
-  color: #424242;
+  color: whitesmoke;
 }
 .site-title:hover {
   text-decoration: none;
@@ -149,3 +149,4 @@ figure {
     margin-left: 20px;
   }
 }
+
