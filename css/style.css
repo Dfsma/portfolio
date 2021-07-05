@@ -133,10 +133,10 @@ figure {
   }
   .site-title{
     font-size: 0.8rem;
-    font-weight: 300;
+    font-weight: 400;
     font: bold;
    text-decoration: none;
-   color: #424242;
+   color: white;
   }
   .container{
     width: 100%;
