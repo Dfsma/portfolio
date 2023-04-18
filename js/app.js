@@ -18,3 +18,17 @@ btn.addEventListener("click", function () {
   }
   localStorage.setItem("theme", theme);
 });*/
+
+
+function darkMode() {
+  var element = document.body;
+  var darked  = element.classList.toggle("dark-mode");
+  /*console.log("" + darked)*/
+  const iconValue = document.querySelector("#icon");
+ 
+  if(darked){
+    iconValue.textContent = 'light_mode';
+  }else{
+    iconValue.textContent = 'dark_mode';
+  }
+}
