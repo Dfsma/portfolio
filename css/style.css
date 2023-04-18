@@ -15,15 +15,14 @@ nav {
   display: block;
 }
 .container{
-
   height: 100%;
 }
 .page-content {
  
-  max-width: 70rem;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding: 40px;
+  padding: 2px;
   box-sizing: border-box;
   background:#fff;
 
@@ -42,7 +41,7 @@ nav {
 
 .site-header {
   text-align: center; /*Deja los textos centrado*/
-  max-width: 70rem;
+  max-width: 100%;
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -84,14 +83,6 @@ img {
 }
 
 
-.div-logo {
-  font-family: arial;
-  font-size: 24px;
-  margin: 25px;
-  width: auto;
-  height: 60px;
-}
-
 .child {
   width: 70px;
   height: 70px;
@@ -102,18 +93,22 @@ img {
 }
 
 #info-actual{
+  
+  margin: 0;
+}
+
+#stack{
   display: flex;
   margin: 0;
 }
 
 #figuras{
   display: flex;
-  justify-content: space-between;
 }
 
 #logo{
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
 }
 
 svg path, svg g{
@@ -176,7 +171,7 @@ figure {
   margin-left: auto;
   margin-right: auto;
   border:none;
-  width: 600px;
+  width: 80%;
  
 }
 
@@ -195,12 +190,27 @@ figure {
    color: black;
   }
   
-  figure{
-    width: 100%;
-  }
+ 
   .page-content{
-    margin-right: 20px;
-    margin-left: 20px;
+    
+
+  }
+
+  .site-header{
+
+  }
+
+ 
+}
+
+@media (max-width: 1150px){
+  #figuras{
+    display:inline;
   }
 }
 
+@media (max-width: 450px){
+  #stack{
+    display:inline;
+  }
+}
